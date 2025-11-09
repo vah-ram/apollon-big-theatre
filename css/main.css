@@ -1049,7 +1049,7 @@ body::-webkit-scrollbar {
     }
 
     .theatre__section {
-        min-height: 50vh;
+        min-height: 70vh;
     }
 
     .theatre__section .theatre__content {
