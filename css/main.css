@@ -1062,6 +1062,18 @@ body::-webkit-scrollbar {
         width: 100%;
     }
 
+    .theatre__years .theatre__year {
+        font-size: 60px;
+    }
+
+    .theatre__award .theatre__stars {
+        gap: 10px;
+    }
+
+    .theatre__award .theatre__text {
+        font-size: 30px;
+    }
+
     .sponsor__form .sponsor__inputs {
         grid-template-areas: "first second"
                             "third fourth"
