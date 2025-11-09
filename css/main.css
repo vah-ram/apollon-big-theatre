@@ -1027,6 +1027,10 @@ body::-webkit-scrollbar {
 
 @media (max-width: 576px) {
 
+    .main__center {
+        padding-left: 20px;
+    }
+
     .about__footer .about__content {
         width: 100%;
         flex-direction: column;
