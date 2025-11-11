@@ -104,13 +104,14 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     gap: 100px;
+    overflow: hidden;
 }
 
 .main__center .main__text {
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 50px;
 }
 
 .main__text .main__title {
@@ -455,14 +456,7 @@ body::-webkit-scrollbar {
 }
 
 .production__slider::-webkit-scrollbar {
-    background: transparent;
-    height: 5px;
-}
-
-.production__slider::-webkit-scrollbar-thumb {
-    background: #959595;
-    cursor: pointer;
-    border-radius: 5px;
+    display: none;
 }
 
 .production__slider .production__slide {
@@ -510,9 +504,10 @@ body::-webkit-scrollbar {
 }
 
 .production__slide-date {
+    width: 200px;
     position: absolute;
-    left: -10px;
-    bottom: 110px;
+    left: -30px;
+    bottom: 130px;
     font-family: "Open Sans Condensed", sans-serif;
     font-weight: 700;
     font-size: 18px;
