@@ -104,7 +104,7 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     gap: 100px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .main__center .main__text {
@@ -1026,6 +1026,10 @@ body::-webkit-scrollbar {
         padding-left: 20px;
     }
 
+    .main__text .main__title {
+        font-size: 50px;
+    }
+
     .about__footer .about__content {
         width: 100%;
         flex-direction: column;
@@ -1062,7 +1066,7 @@ body::-webkit-scrollbar {
     }
 
     .theatre__years .theatre__year {
-        font-size: 60px;
+        font-size: 50px;
     }
 
     .theatre__award .theatre__stars {
@@ -1070,7 +1074,7 @@ body::-webkit-scrollbar {
     }
 
     .theatre__award .theatre__text {
-        font-size: 30px;
+        font-size: 27px;
     }
 
     .sponsor__form .sponsor__inputs {
@@ -1101,4 +1105,24 @@ body::-webkit-scrollbar {
         text-align: center;
     }
 
+}
+
+@media (max-width: 350px) {
+
+    .theatre__years .theatre__year {
+        font-size: 38px;
+    }
+
+    .theatre__award .theatre__stars {
+        gap: 5px;
+    }
+
+    .theatre__award .theatre__text {
+        font-size: 20px;
+    }
+
+    .production__footer .production__title {
+        font-size: 35px;
+    }
+    
 }
