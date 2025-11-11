@@ -104,7 +104,7 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     gap: 100px;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .main__center .main__text {
