@@ -82,6 +82,7 @@ body::-webkit-scrollbar {
     text-transform: uppercase;
     color: #FFF;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .main__phone:before {
@@ -105,6 +106,7 @@ body::-webkit-scrollbar {
     align-items: center;
     gap: 100px;
     overflow: hidden;
+    padding-right: 50px;
 }
 
 .main__center .main__text {
@@ -217,7 +219,8 @@ body::-webkit-scrollbar {
     background: rgba(42, 42, 42, 0.642);
     display: none;
     flex-direction: column;
-    gap: 20px;
+    justify-content: center;
+    gap: 25vw;
     align-items: center;
     padding-bottom: 20px;
 }
@@ -229,10 +232,6 @@ body::-webkit-scrollbar {
     background: transparent;
     border: none;
     cursor: pointer;
-}
-
-.header__menu--mobile .main__menu {
-    margin-top: 100px;
 }
 
 .header__menu--mobile .main__menu .main__menu-item {
@@ -252,7 +251,6 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-top: 80px;
 }
 
 .menu__socials .social__line-div {
@@ -325,7 +323,8 @@ body::-webkit-scrollbar {
 
 .about__footer {
     width: calc(100% - 150px);
-    min-height: 100vh;
+    height: auto;
+    padding: 100px;
     background: transparent;
     display: flex;
     flex-direction: column;
@@ -351,11 +350,17 @@ body::-webkit-scrollbar {
     margin-top: 100px;
     color: #FFF;
     justify-content: center;
+    padding-right: 100px;
 }
 
 .about__content .about__item {
     position: relative;
     width: 30%;
+    padding: 10px;
+}
+
+.about__content .about__item:nth-child(2) {
+    padding-left: 30px;
 }
 
 .about__item .about--part {
@@ -410,20 +415,13 @@ body::-webkit-scrollbar {
     margin-top: 50px;
 } 
 
-.about__content .about__theatre--picture {
-    width: 350px;
-    height: 300px;
-    background: url('../Img/about-theatre-img.png') center center / cover no-repeat;
-    flex-shrink: 0;
-}
-
 .about__title b {
     color: #D1A954;
 }
 
 .production__footer {
     width: calc(100% - 150px);
-    min-height: 100vh;
+    min-height: auto;
     background: transparent;
     display: flex;
     flex-direction: column;
@@ -475,6 +473,10 @@ body::-webkit-scrollbar {
   background-repeat: no-repeat;
   opacity: 0.4;
   z-index: 0;
+}
+
+.production__slider .production__slide:nth-child(2):before {
+    opacity: 1;
 }
 
 .production__slider .production__slide:nth-child(1)::before {
@@ -539,8 +541,9 @@ body::-webkit-scrollbar {
 
 .theatre__section {
     width: calc(100% - 150px);
-    min-height: 100vh;
+    height: auto;
     margin-left: 150px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -563,7 +566,7 @@ body::-webkit-scrollbar {
     position: absolute;
     inset: 0;
     z-index: 0;
-    opacity: .2;
+    opacity: .1;
     background: url('../Img/best__theatre-img.png') center center / cover no-repeat;
 }
 
@@ -605,7 +608,8 @@ body::-webkit-scrollbar {
 
 .partners__footer {
     width: calc(100% - 150px);
-    min-height: 100vh;
+    height: auto;
+    padding: 100px;
     margin-left: 150px;
     display: flex;
     flex-direction: column;
@@ -633,14 +637,15 @@ body::-webkit-scrollbar {
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     align-items: center;
-    gap: 50px;
+    gap: 70px;
     margin-top: 100px;
 }
 
 .sponsor__section {
     width: calc(100% - 150px);
-    min-height: 100vh;
+    height: auto;
     margin-left: 150px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -697,7 +702,7 @@ body::-webkit-scrollbar {
 }
 
 .sponsor__section .sponsor__form {
-    width: 50%;
+   width: 40rem;
 }
 
 .sponsor__form .sponsor__inputs {
@@ -711,11 +716,11 @@ body::-webkit-scrollbar {
 }
 
 .sponsor__inputs .sponsor__input {
-    background: #616161;
+    background: #444444;
     outline: none;
-    border: none;
     padding: 10px;
     color: #FFF;
+    border: 1px solid #616161;
 }
 
 .sponsor__input::-webkit-input-placeholder {
@@ -725,9 +730,9 @@ body::-webkit-scrollbar {
 .sponsor__inputs .sponsor__textarea {
     width: 100%;
     height: 100%;
-    background: #616161;
+    background: #444444;
+    border: 1px solid #616161;
     outline: none;
-    border: none;
     padding: 10px;
     color: #FFF;
 }
@@ -764,7 +769,7 @@ body::-webkit-scrollbar {
 }
 
 .sponsor__form .sponsor__description {
-    width: 50%;
+    width: 60%;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 12px;
@@ -835,12 +840,37 @@ body::-webkit-scrollbar {
         padding-left: 15%;
         padding-right: 15%;
     }
+
+    .sponsor__container .sponsor__form {
+        width: 40rem;
+    }
+}
+
+@media(max-width: 1280px) {
+
+    .main__center {
+        padding-right: 80px;
+    }
+
+    .main__header {
+        padding: 30px;
+    }
+
+    .main__header .main__menu {
+        gap: 15px;
+    }
+
+    .main__menu-item .menu__item-link  {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 992px) {
 
     .main__section .main__header {
         justify-content: center;
+        padding: 0;
+        height: 120px;
     }
 
     .main__header .main__phone {
@@ -850,7 +880,7 @@ body::-webkit-scrollbar {
 
     .main__header .main__menu {
         width: 100%;
-        gap: 20px;
+        gap: 30px;
     }
 
     .main__center .main__slider {
@@ -864,6 +894,14 @@ body::-webkit-scrollbar {
 
     .main__center .main__text {
         width: 100%;
+    }
+
+    .about__footer .about__content {
+        padding-right: 0;
+    }
+
+    .about__content .about__item:nth-child(2) {
+        padding-left: 0;
     }
 
     .theatre__section .theatre__content {
@@ -930,6 +968,10 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width: 768px) {
+
+    .main__center {
+        padding-right: 0;
+    }
 
     .main__header {
         padding-left: 20px;
